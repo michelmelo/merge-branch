@@ -1,6 +1,6 @@
-name: 'Merge branch'
+name: 'Merge branch MM'
 description: 'A GitHub Action that manage git merge for any gitflow'
-author: Miguel Savignano
+author: Michel Melo
 inputs:
   type:
     type: 'labeled | now'
