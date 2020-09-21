@@ -1,7 +1,7 @@
 FROM ruby:2.6.3-alpine
 
 WORKDIR /action
-COPY Gemfile Gemfile.lock /action/
+COPY Gemfile /action/
 RUN bundle install
 COPY lib /action/lib
 
