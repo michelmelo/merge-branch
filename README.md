@@ -24,7 +24,7 @@ jobs:
           type: now
           from_branch: development
           target_branch: staging
-          github_token: ${{ github.token }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Merge staging -> uat
         uses: michelmelo/merge-branch@master
@@ -32,7 +32,7 @@ jobs:
           type: now
           from_branch: staging
           target_branch: uat
-          github_token: ${{ github.token }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 ```
 
 ### Merge current branch
@@ -54,5 +54,5 @@ jobs:
         with:
           type: now
           target_branch: uat
-          github_token: ${{ github.token }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 ```

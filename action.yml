@@ -1,5 +1,5 @@
 name: 'Merge branch MM'
-description: 'A GitHub Action that manage git merge for any gitflow'
+description: 'A GitHub action that manages git merge for any branch'
 author: Michel Melo
 inputs:
   type:
