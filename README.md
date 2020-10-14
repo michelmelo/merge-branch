@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@master
 
       - name: Merge development -> staging
-        uses: michelmelo/merge-branch@master
+        uses: michelmelo/merge-branch@1.2.1
         with:
           type: now
           from_branch: development
@@ -27,7 +27,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Merge staging -> uat
-        uses: michelmelo/merge-branch@master
+        uses: michelmelo/merge-branch@1.2.1
         with:
           type: now
           from_branch: staging
@@ -50,7 +50,7 @@ jobs:
       - uses: actions/checkout@master
 
       - name: Merge staging -> uat
-        uses: michelmelo/merge-branch@master
+        uses: michelmelo/merge-branch@1.2.1
         with:
           type: now
           target_branch: uat
