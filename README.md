@@ -1,4 +1,4 @@
-## MM :: Merge branc
+## MM :: Merge branch
 
 Runs a git merge in your CI.
 
