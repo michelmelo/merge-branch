@@ -1,4 +1,4 @@
-name: 'Merge branch MM'
+name: 'MM :: Merge branch'
 description: 'A GitHub action that manages git merge for any branch'
 author: Michel Melo
 inputs:
